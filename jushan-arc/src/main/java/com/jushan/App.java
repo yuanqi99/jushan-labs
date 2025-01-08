@@ -1,4 +1,4 @@
-package vip.xiaonuo;
+package com.jushan;
 
 /**
  * Hello world!

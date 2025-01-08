@@ -1,4 +1,4 @@
-package vip.xiaonuo;
+package com.jushan;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
