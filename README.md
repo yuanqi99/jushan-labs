@@ -5,7 +5,7 @@
 
 * 如有发现错误，请道友提提意见。共同进步。
 
-
+# 遇事不决，可以问春风
 
 <svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" style="background-color: #0f0f1f;">
   <!-- 背景风的曲线 -->
@@ -26,12 +26,12 @@
   </g>
 
   <!-- 文字部分 -->
-  <text x="400" y="100" font-size="36" text-anchor="middle" fill="#e0e0ff" font-family="Comic Sans MS, cursive">
+  <text x="400" y="100" font-size="36" text-anchor="middle" fill="#e0e0ff" font-family="Arial, sans-serif">
     遇事不决，可以问春风
   </text>
 
   <!-- 作者名字 -->
-  <text x="400" y="150" font-size="24" text-anchor="middle" fill="#a0a0ff" font-family="Comic Sans MS, cursive">
+  <text x="400" y="150" font-size="24" text-anchor="middle" fill="#a0a0ff" font-family="KaiTi, serif">
     —— 齐静春
   </text>
 
