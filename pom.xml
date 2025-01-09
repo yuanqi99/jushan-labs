@@ -18,6 +18,7 @@
     <module>jushan-log</module>
     <module>jushan-office</module>
     <module>jushan-flw</module>
+    <module>jushan-mq</module>
   </modules>
 
   <properties>

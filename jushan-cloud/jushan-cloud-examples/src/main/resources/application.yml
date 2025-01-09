@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: web-app
+  profiles:
+    active: dev
+  main:
+    allow-circular-references: true
+  cloud:
+    nacos:
+      discovery:
+        server-addr: xxx:8848
+        namespace: 6e923f8e-0061-43a2-8ac3-1365db978e92
+        group: dev
+        username: nacos
+        password: xxx

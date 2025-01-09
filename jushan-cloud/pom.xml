@@ -8,21 +8,58 @@
     </parent>
 
     <artifactId>jushan-cloud</artifactId>
-    <packaging>jar</packaging>
+    <packaging>pom</packaging>
 
     <name>jushan-cloud</name>
     <url>http://maven.apache.org</url>
+    <modules>
+        <module>jushan-cloud-examples</module>
+    </modules>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <spring.boot-version>3.2.1</spring.boot-version>
+        <spring-framework.version>6.1.2</spring-framework.version>
+        <spring.cloud-version>2023.0.1</spring.cloud-version>
+        <spring.cloud.bootstrap-version>4.1.2</spring.cloud.bootstrap-version>
+        <spring.cloud.alibaba-version>2022.0.0.0</spring.cloud.alibaba-version>
     </properties>
 
-    <dependencies>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>3.8.1</version>
-            <scope>test</scope>
-        </dependency>
-    </dependencies>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring.boot-version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <!-- SpringCloud -->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring.cloud-version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <!-- SpringCloud Alibaba -->
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+                <version>${spring.cloud.alibaba-version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <!-- SpringCloud BootStrap -->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-bootstrap</artifactId>
+                <version>${spring.cloud.bootstrap-version}</version>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
 </project>
