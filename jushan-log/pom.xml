@@ -57,6 +57,12 @@
                 <artifactId>aliyun-log-logback-appender</artifactId>
                 <version>0.1.18</version>
             </dependency>
+
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-all</artifactId>
+                <version>5.8.35</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 </project>

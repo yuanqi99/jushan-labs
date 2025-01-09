@@ -6,6 +6,7 @@
     <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
             <pattern>%d{yyyy-MM-dd HH:mm:ss} %-5level [%thread] %logger{0}: %msg%n</pattern>
+            <charset>utf-8</charset>
         </encoder>
     </appender>
 
@@ -13,8 +14,8 @@
         <!--必选项-->
         <!-- 账号及网络配置 -->
         <endpoint>cn-shanghai.log.aliyuncs.com</endpoint>
-        <accessKeyId>xx</accessKeyId>
-        <accessKeySecret>xx</accessKeySecret>
+        <accessKeyId></accessKeyId>
+        <accessKeySecret></accessKeySecret>
 
         <!-- sls 项目配置 -->
         <project>jushan-log</project>
@@ -39,6 +40,7 @@
         <!-- 可选项 通过配置 encoder 的 pattern 自定义 log 的格式 -->
         <encoder>
             <pattern>%d{yyyy-MM-dd HH:mm:ss} %-5level [%thread] %logger{0}: %msg%n</pattern>
+            <charset>utf-8</charset>
         </encoder>
 
         <!-- 可选项 设置 time 字段呈现的格式 -->
@@ -53,8 +55,8 @@
         <!-- 参见 "自定义凭证提供者 CredentialsProvider" 一节介绍 -->
         <credentialsProviderBuilder
                 class="com.aliyun.openservices.log.logback.example.ExampleCredentialsProviderBuilder">
-            <accessKeyId>xx</accessKeyId>
-            <accessKeySecret>xx</accessKeySecret>
+            <accessKeyId></accessKeyId>
+            <accessKeySecret></accessKeySecret>
         </credentialsProviderBuilder>
         <!-- 可选项，exception 堆栈最大记录长度，超出此长度会被截断，默认值为 500 -->
         <maxThrowable>500</maxThrowable>
